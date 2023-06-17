@@ -1,0 +1,63 @@
+*{
+    font-family: 'Luckiest Guy', cursive;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(78, 42, 42);
+}
+
+.calculadora{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /*min-height: 100vh;*/
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    background-color: thistle;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.calculadora > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    background-color: rgba(179, 206, 219, 0.75);
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.pantalla-salida{
+    grid-column: 1 / -1;
+    background-color: rgba(11, 28, 87, 0.75);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.pantalla-salida .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.calculadora > button:hover{
+    background-color: skyblue;
+}
